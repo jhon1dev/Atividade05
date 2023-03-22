@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Pré-Matrícula</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn">FORMULÁRIO DE PRÉ-MATRÍCULA</button>
+            </div>
+            <form id="formulario-matricula" class="input-group">
+                <input type="text" class="input-field" placeholder="Nome do Aluno" required>
+                <input type="text" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required>
+                <input type="text" class="input-field" placeholder="Nome da Mãe" required>
+                <input type="text" class="input-field" placeholder="Nome do Pai" required>
+                <input type="text" class="input-field" placeholder="Telefone EX: DDD(82) 9 9999-9999" required>
+                 <div class="submit-buttons">
+                    <button type="submit" class="submit-btn">Limpar Campos</button>
+                    <button type="submit" onclick="confirmar()" class="submit-btn">Confirmar</button>
+                </div>
+            </form>
+            <form id="infos-adicionais" class="input-group" >
+                <input type="text" class="input-field" placeholder="Nome do Aluno" required>
+                <input type="text" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required>
+                <input type="text" class="input-field" placeholder="Nome da Mãe" required>
+                <input type="text" class="input-field" placeholder="Nome do Pai" required>
+                <input type="text" class="input-field" placeholder="Telefone EX: DDD(82) 9 9999-9999" required>
+                <input type="checkbox" class="check-box" id="check-box"><span> Aceitar os termos & condições</span>
+                <div class="submit-buttons">
+                    <button type="submit" class="submit-btn">Limpar Campos</button>
+                    <button type="submit" class="submit-btn">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
