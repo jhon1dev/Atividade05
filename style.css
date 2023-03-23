@@ -82,7 +82,7 @@ p{
     font-size: 15px;
 }
 
-.submit-btn{
+.submit-btn, .clear-btn{
     width: 100%;
     pad: 10px 30px;
     cursor: pointer;
