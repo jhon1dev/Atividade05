@@ -33,23 +33,15 @@ emailInput.addEventListener("input", function(event){ // Ativa com um input - Em
 
 function confirmar(){
   var boxContador = 0;
-  for (var i = 0; i < boxInputs.length; i++) {
-    var element = boxInputs.array[i];
-    alert("teste")
-    if (element.checked) {
+  for (var i = 0; i <= boxInputs.length; i++) {
+    var element = boxInputs[i];
+  
+    if (boxInputs[i].checked) {
       boxContador++;
-      alert("teste")
     }
     if (boxContador > 3) {
-      alert("teste2")
+      boxInputs[i].checked = false;
       break;
     }
   }
-    if(form1.checkValidity()){
-    form1.style.visibility = "hidden";
-    
-}
-    else{
-        alert("por favor, preencha todos os campos corretamente!");
-}
 }
