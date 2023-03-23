@@ -15,18 +15,12 @@
                 <button type="button" class="toggle-btn">FORMULÁRIO DE PRÉ-MATRÍCULA</button>
             </div>
             <form id="formulario-matricula" class="input-group">
-                <input type="text" class="input-field" placeholder="Nome do Aluno" "required">
-                <input type="date" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" "required" min="1980-01-01" Max="2018-01-01">
-                <input type="text" class="input-field" placeholder="Nome da Mãe" "required">
-                <input type="text" class="input-field" placeholder="Nome do Pai" "required">
-                <input id="tel" type="tel" class="input-field" placeholder="Telefone (xx) xxxxx-xxxx" "required">
-                <input id="email" type="text" class="input-field" placeholder="Email Aqui" "required"> 
-                <div class="submit-buttons">
-                    <button type="button" onclick="clearArea()" class="clear-btn">Limpar Campos</button>
-                    <button type="button" onclick="confirmar()" class="submit-btn">Continuar</button>
-                </div>
-            </form>
-            <form id="infos-adicionais" class="input-group">
+                <input type="text" class="input-field" placeholder="Nome do Aluno" required>
+                <input type="date" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required min="1980-01-01" Max="2018-01-01">
+                <input type="text" class="input-field" placeholder="Nome da Mãe" required>
+                <input type="text" class="input-field" placeholder="Nome do Pai" required>
+                <input id="tel" type="tel" class="input-field" placeholder="Telefone (xx) xxxxx-xxxx" required>
+                <input id="email" type="text" class="input-field" placeholder="Email Aqui" required> 
                 <p>SÉRIE</p>
                 <div class="serie-field">
                     <select name="select" id="select-serie">
@@ -37,27 +31,20 @@
                 </div>
                 <p>TURNO</p>
                 <div class="radio-field">
-                    <input id="Vespertino" type="radio" required>
-                    <label for="Vespertino">Vespertino</label>
-                    <input id="Matutino" type="radio" required>
-                    <label for="Matutino">Matutino</label>
+                    <label for="Vespertino"><input id="Vespertino" type="radio" name="box" required> VESPERTINO</label>
+                    <label for="Matutino"><input id="Matutino" type="radio" name="box" required> MATUTINO</label>
                 </div>
                 <p>ATIVIDADES EXTRARCURRICULARES</p>
                 <div class="box-field">
-                    <input type="checkbox" name="dasdas" id="box">
-                    <label for="box"> INFORMÁTICA</label>
-                    <input type="checkbox" name="dasdas" id="box">
-                    <label for="box"> MÚSICA</label>
-                    <input type="checkbox" name="dasdas" id="box">
-                    <label for="box"> BALLET</label>
-                    <input type="checkbox" name="dasdas" id="box">
-                    <label for="box"> PINTURA</label>
-                    <input type="checkbox" name="dasdas" id="box">
-                    <label for="box"> JUDO</label>
+                <label for="box" class="box"> <input type="checkbox" class="box" name="box"> INFORMÁTICA</label>
+                <label for="box" class="box"><input type="checkbox" class="box" name="box"> MÚSICA</label>
+                <label for="box" class="box"> <input type="checkbox" class="box" name="box"> BALLET </label>
+                <label for="box"> <input type="checkbox" class="box" name="box"> PINTURA </label>
+                <label for="box"> <input type="checkbox" class="box"  name="box"> JUDÔ </label>
                 </div>
                 <div class="submit-buttons">
-                    <button type="button" onclick="clearArea()" class="clear-btn">Limpar Campos</button>
-                    <button type="submit" class="submit-btn">Confirmar</button>
+                    <button type="reset" onclick="clearArea()" class="clear-btn">Limpar Campos</button>
+                    <button type="submit" class="submit-btn">Enviar Formulário</button>
                 </div>
             </form>
         </div>

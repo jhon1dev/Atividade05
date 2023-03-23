@@ -2,18 +2,19 @@
     padding: 0px;
     margin: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
 }
 .container{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://image.lexica.art/full_jpg/1605e4d2-c035-4ea5-bb3f-f527301d7c17");
+    background-image: url("https://www2.ifal.edu.br/campus/maceio/noticias/ifal-maceio-inicia-acesso-informatizado-de-alunos-ao-campus/site-artes-site-maceio-3.jpg/@@images/c1a288d0-7d27-41a2-a40d-04e057dae366.jpeg");
     background-position: center;
     background-size: cover;
-    position: absolute;
+    position: fixed;
 }
 .form-box{
     width: 380px;
-    height: 480px;
+    height: 800px;
     position: relative;
     margin: 6% auto;
     background:#fff;
@@ -24,7 +25,7 @@
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #a6ffc148;
+    box-shadow: 0 0 20px 9px #1e613246;
     border-radius: 30px;
 }
 .toggle-btn{
@@ -79,8 +80,14 @@
     align-self:baseline;
 }
 
-p{
-    font-size: 15px;
+p, .select-serie{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+    position: relative;
 }
 
 .submit-btn, .clear-btn{
@@ -99,6 +106,7 @@ p{
     left:50px;
 }
 #infos-adicionais{
+    margin-top: -90px;
     display: inline-flexbox;
     height: 50%;
     left: 450px;
@@ -110,6 +118,8 @@ p{
 }
 
 .box-field{
+    margin-top: 15px;
+    margin-left: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
