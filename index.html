@@ -15,22 +15,46 @@
                 <button type="button" class="toggle-btn">FORMULÁRIO DE PRÉ-MATRÍCULA</button>
             </div>
             <form id="formulario-matricula" class="input-group">
-                <input type="text" class="input-field" placeholder="Nome do Aluno" required>
-                <input type="date" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required>
-                <input type="text" class="input-field" placeholder="Nome da Mãe" required>
-                <input type="text" class="input-field" placeholder="Nome do Pai" required>
-                <input id="tel" type="tel" class="input-field" placeholder="Telefone (xx) xxxxx-xxxx" required>
-                <input id="email" type="text" class="input-field" placeholder="Email Aqui" required> 
+                <input type="text" class="input-field" placeholder="Nome do Aluno" "required">
+                <input type="date" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" "required">
+                <input type="text" class="input-field" placeholder="Nome da Mãe" "required">
+                <input type="text" class="input-field" placeholder="Nome do Pai" "required">
+                <input id="tel" type="tel" class="input-field" placeholder="Telefone (xx) xxxxx-xxxx" "required">
+                <input id="email" type="text" class="input-field" placeholder="Email Aqui" "required"> 
                 <div class="submit-buttons">
                     <button type="button" onclick="clearArea()" class="clear-btn">Limpar Campos</button>
-                    <button type="button" onclick="confirmar()" class="submit-btn">Confirmar</button>
+                    <button type="button" onclick="confirmar()" class="submit-btn">Continuar</button>
                 </div>
             </form>
             <form id="infos-adicionais" class="input-group">
-                <p>Turno</p>
-                <input id="Vespertino" type="radio" class="input-field" required>
-                <input id="Matutino" type="radio" class="input-field" required>
-                <label for="Vespertino">Vespertino</label></br>
+                <p>SÉRIE</p>
+                <div class="serie-field">
+                    <select name="select" id="select-serie">
+                        <option value="pre-escolar">PRÉ ESCOLAR</option>
+                        <option value="pre-escolar">ENSINO FUDAMENTAL</option>
+                        <option value="pre-escolar">ENSINO MÉDIO</option>
+                    </select>
+                </div>
+                <p>TURNO</p>
+                <div class="radio-field">
+                    <input id="Vespertino" type="radio" required>
+                    <label for="Vespertino">Vespertino</label>
+                    <input id="Matutino" type="radio" required>
+                    <label for="Matutino">Matutino</label>
+                </div>
+                <p>ATIVIDADES EXTRARCURRICULARES</p>
+                <div class="box-field">
+                    <input type="checkbox" name="dasdas" id="box">
+                    <label for="box"> INFORMÁTICA</label>
+                    <input type="checkbox" name="dasdas" id="box">
+                    <label for="box"> MÚSICA</label>
+                    <input type="checkbox" name="dasdas" id="box">
+                    <label for="box"> BALLET</label>
+                    <input type="checkbox" name="dasdas" id="box">
+                    <label for="box"> PINTURA</label>
+                    <input type="checkbox" name="dasdas" id="box">
+                    <label for="box"> JUDO</label>
+                </div>
                 <div class="submit-buttons">
                     <button type="button" onclick="clearArea()" class="clear-btn">Limpar Campos</button>
                     <button type="submit" class="submit-btn">Confirmar</button>

@@ -4,9 +4,9 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    height: 6% auto;
+    height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://image.lexica.art/full_jpg/0a7c22ec-1519-41c0-a868-e93559d642e2");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://image.lexica.art/full_jpg/1605e4d2-c035-4ea5-bb3f-f527301d7c17");
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -24,7 +24,7 @@
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff91241f;
+    box-shadow: 0 0 20px 9px #a6ffc148;
     border-radius: 30px;
 }
 .toggle-btn{
@@ -70,6 +70,7 @@
     outline: none;
     background: transparent;
 }
+
 .submit-buttons, p{
     display: flex;
     gap: 10%;
@@ -88,7 +89,7 @@ p{
     cursor: pointer;
     display: inline-block;
     margin: auto;
-    background: linear-gradient(to right, #ffa806, #d46702);
+    background: linear-gradient(to right, #d9ffec, #fcf2ea);
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -98,7 +99,20 @@ p{
     left:50px;
 }
 #infos-adicionais{
+    display: inline-flexbox;
+    height: 50%;
     left: 450px;
+}
+.radio-field, .serie-field{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.box-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #check-box{
