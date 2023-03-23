@@ -16,24 +16,23 @@
             </div>
             <form id="formulario-matricula" class="input-group">
                 <input type="text" class="input-field" placeholder="Nome do Aluno" required>
-                <input type="text" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required>
+                <input type="date" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required>
                 <input type="text" class="input-field" placeholder="Nome da Mãe" required>
                 <input type="text" class="input-field" placeholder="Nome do Pai" required>
-                <input type="text" class="input-field" placeholder="Telefone EX: DDD(82) 9 9999-9999" required>
-                 <div class="submit-buttons">
-                    <button type="submit" class="submit-btn">Limpar Campos</button>
-                    <button type="submit" onclick="confirmar()" class="submit-btn">Confirmar</button>
+                <input id="tel" type="tel" class="input-field" placeholder="Telefone (xx) xxxxx-xxxx" required>
+                <input id="email" type="text" class="input-field" placeholder="Email Aqui" required> 
+                <div class="submit-buttons">
+                    <button type="button" class="submit-btn">Limpar Campos</button>
+                    <button type="button" onclick="confirmar()" class="submit-btn">Confirmar</button>
                 </div>
             </form>
-            <form id="infos-adicionais" class="input-group" >
-                <input type="text" class="input-field" placeholder="Nome do Aluno" required>
-                <input type="text" class="input-field" placeholder="Data de Nascimento (dd/mm/aaaa)" required>
-                <input type="text" class="input-field" placeholder="Nome da Mãe" required>
-                <input type="text" class="input-field" placeholder="Nome do Pai" required>
-                <input type="text" class="input-field" placeholder="Telefone EX: DDD(82) 9 9999-9999" required>
-                <input type="checkbox" class="check-box" id="check-box"><span> Aceitar os termos & condições</span>
+            <form id="infos-adicionais" class="input-group">
+                <p>Turno</p>
+                <input id="Vespertino" type="radio" class="input-field" required>
+                <input id="Matutino" type="radio" class="input-field" required>
+                <label for="Vespertino">Vespertino</label></br>
                 <div class="submit-buttons">
-                    <button type="submit" class="submit-btn">Limpar Campos</button>
+                    <button type="button" class="submit-btn">Limpar Campos</button>
                     <button type="submit" class="submit-btn">Confirmar</button>
                 </div>
             </form>

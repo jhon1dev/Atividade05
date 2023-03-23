@@ -4,7 +4,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    height: 100%;
+    height: 6% auto;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("https://image.lexica.art/full_jpg/0a7c22ec-1519-41c0-a868-e93559d642e2");
     background-position: center;
@@ -18,12 +18,13 @@
     margin: 6% auto;
     background:#fff;
     padding: 5px;
+    overflow: hidden;
 }
 .button-box{
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
+    box-shadow: 0 0 20px 9px #ff91241f;
     border-radius: 30px;
 }
 .toggle-btn{
@@ -52,7 +53,13 @@
     width: 280px;
     transition: .5s;
 }
+
+#label{
+    align-items: center;
+}
+
 .input-field{
+    text-align: center;
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
@@ -63,11 +70,16 @@
     outline: none;
     background: transparent;
 }
-.submit-buttons{
+.submit-buttons, p{
     display: flex;
     gap: 10%;
+    margin-top: 20px;
     justify-content: center;
     align-self:baseline;
+}
+
+p{
+    font-size: 15px;
 }
 
 .submit-btn{
@@ -91,5 +103,4 @@
 
 #check-box{
     margin-top: 20px;
-    margin-bottom: 20px ;
 }
