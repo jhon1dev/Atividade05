@@ -32,7 +32,6 @@ emailInput.addEventListener("input", function(event){
 function validCheckbox(){
   var boxContador = 0;
   for (var i = 0; i <= boxInputs.length; i++) {
-    var element = boxInputs[i];
   
     if (boxInputs[i].checked) {
       boxContador++;
